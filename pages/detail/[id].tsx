@@ -137,7 +137,7 @@ const Detail = ({ postDetails }: IProps) => {
                         <div>
                         <Link href="/">
                             <div className="mt-3 flex flex-col gap-2">
-                                <p className="flex gap-2 items-center md:text-md font-bold text-primary">
+                                <p className="flex gap-2 items-center md:text-md font-bold text-sky-400">
                                     {post.postedBy.userName} {``}
                                     <GoVerified className="text-[#fcd34d] text-md"/>
                                 </p>
@@ -147,7 +147,7 @@ const Detail = ({ postDetails }: IProps) => {
                         </div>
                     </div>
 
-                    <p className="px-10 text-lg text-gray-600">{post.caption}</p>
+                    <p className="px-10 text-lg text-[#db2777]">{post.caption}</p>
 
                     <div className="mt-10 px-10">
                         {userProfile && (

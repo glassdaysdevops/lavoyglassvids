@@ -19,6 +19,10 @@ const Navbar = () => {
   const [searchValue, setSearchValue] = useState('');
   const router = useRouter();
 
+  useEffect(() => {
+    setUser(userProfile);
+  }, [userProfile]);
+
   const handleSearch = (e: { preventDefault: () => void }) => {
     e.preventDefault();
 
@@ -64,7 +68,7 @@ const Navbar = () => {
         
 
         <div>
-          {userProfile ? (
+          {user ? (
             <div className="flex gap-5 md:gap-10">
               <Link href="/upload">
                 <button className="border-2 px-2 md:px-4 text-md font-semibold flex items-center gap-2 rounded-[10px]">
@@ -72,14 +76,14 @@ const Navbar = () => {
                   <span className="hidden md:block text-[#ec4899]">Upload</span>
                 </button>
               </Link>
-              {userProfile.image && (
+              {user.image && (
                 <Link href="/">
                 <>
                     <Image
                         width={40}
                         height={40}
                         className="rounded-full cursor-pointer"
-                        src={userProfile.image}
+                        src={user.image}
                         alt="profile photo"
                         
                     />
