@@ -35,7 +35,7 @@ module.exports = {
       },
       backgroundImage: {
         'blurred-img':
-          "url('../img/chesscolorednobordpink.png')",
+          "url('../img/theonecropped3.png')",
         'larger-img':
           "url('../img/Large.png')",
       },

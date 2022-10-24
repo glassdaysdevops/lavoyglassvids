@@ -75,7 +75,7 @@ const VideoCard : NextPage<IProps> = ({ post }) => {
                         <video
                             loop
                             ref={videoRef}
-                            className="lg:w-[800px] h-[300px] md:h-[400px] sm:h-[530px] w-[570px] rounded-2x1 cursor-pointer bg-blurred-img bg-cover bg-center rounded-[10px]"
+                            className="lg:w-[800px] h-[300px] md:h-[400px] sm:h-[530px] w-[570px] rounded-2x1 cursor-pointer bg-blurred-img bg-cover bg-center rounded-[20px]"
                             src={post.video.asset.url}
                         >
                         </video>
