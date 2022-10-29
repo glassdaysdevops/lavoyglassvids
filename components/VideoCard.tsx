@@ -86,21 +86,21 @@ const VideoCard : NextPage<IProps> = ({ post }) => {
                             {playing ? (
                                 <button onClick= {onVideoPress}>
                                     <BsFillPauseFill
-                                    className="text-[#1e3a8a]  text-2x1 lg:text-4xl"/>
+                                    className="text-[#fde047]  text-2x1 lg:text-4xl"/>
                                 </button>
                             ) : (
                                 <button onClick= {onVideoPress}>
                                     <BsFillPlayFill
-                                    className="text-[#1e3a8a]  text-2x1 lg:text-4xl"/>
+                                    className="text-[#fde047]  text-2x1 lg:text-4xl"/>
                                 </button>
                             )}
                             {isVideoMuted ? (
                                 <button onClick={() => setIsVideoMuted(false)}>
-                                    <HiVolumeOff className="text-[#1e3a8a]  text-2x1 lg:text-4xl"/>
+                                    <HiVolumeOff className="text-[#fde047]  text-2x1 lg:text-4xl"/>
                                 </button>
                             ) : (
                                 <button onClick={() => setIsVideoMuted(true)}>
-                                    <HiVolumeUp className="text-[#1e3a8a]  text-2x1 lg:text-4xl"/>
+                                    <HiVolumeUp className="text-[#fde047]  text-2x1 lg:text-4xl"/>
                                 </button>
                             )}
                         </div>
